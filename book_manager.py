@@ -30,12 +30,7 @@ class BookManager:
         else:
             print("无效的图书索引")
 
-    def delete_book(self, index):
-        if 0 <= index < len(self.books):
-            book = self.books.pop(index)
-            print(f"删除图书成功：《{book.title}》")
-        else:
-            print("无效的图书索引")
+
 
 def main():
     manager = BookManager()
